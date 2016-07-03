@@ -85,6 +85,7 @@ def T1LL_result(request):
     MEDV_SVR = SVR_fitting(crime,zn,inidus,optradio,nox,rm,age,dis,rad,tax,ptratio,Bk,lstat)
     pic_SVR = SVR_plot(crime,zn,inidus,optradio,nox,rm,age,dis,rad,tax,ptratio,Bk,lstat)
     script, div = bokeh_plot(crime,zn,inidus,optradio,nox,rm,age,dis,rad,tax,ptratio,Bk,lstat)
+    hi=highchart()
 
     result_dict={
         "MEDV_linear":MEDV_linear,
@@ -92,7 +93,8 @@ def T1LL_result(request):
         "MEDV_SVR":MEDV_SVR,
         "pic_SVR":pic_SVR,
         "the_script":script,
-        "the_div":div
+        "the_div":div,
+        "highchart":hi
     }
     return render(
     request,
