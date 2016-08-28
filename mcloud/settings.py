@@ -17,18 +17,14 @@ LOGIN_URL =  '/login/'
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'nez!!et_bdqpc*d@xnz9ton&!kecf^ym$41=-_183-pk%u2d#s'
+SECRET_KEY = 'dces7fnz+l8)gy69qf%)-85!mthucx*s5v09dx+#5nec2_*i0s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = [   'mcloud7.herokuapp.com',  # Allow domain and subdomains
-                    'mxyun.mrilab.org',
-                    'mcloudtw.herokuapp.com',
-                    'localhost']
-
+ALLOWED_HOSTS = [ 'localhost']
 
 # Application definition
 
